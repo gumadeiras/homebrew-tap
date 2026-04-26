@@ -7,9 +7,12 @@ Homebrew tap for `gumadeiras` tools.
 ```bash
 brew tap gumadeiras/tap
 brew install bdsc-cli
-brew install flylight-cli
-brew install flybase-cli
-brew install fruitloops
+brew install gotrain-cli
+brew install fruitmail-cli
+brew install office-quotes-cli
+brew install roku-cli
+brew install zot
+brew install anovabar
 ```
 
 ## fruitloops extras
