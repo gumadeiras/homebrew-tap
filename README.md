@@ -13,6 +13,7 @@ brew install office-quotes-cli
 brew install roku-cli
 brew install zot
 brew install anovabar
+brew install fruitloops
 ```
 
 ## fruitloops extras
