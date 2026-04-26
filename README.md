@@ -8,4 +8,5 @@ Homebrew tap for `gumadeiras` tools.
 brew tap gumadeiras/tap
 brew install bdsc-cli
 brew install flybase-cli
+brew install fruitloops
 ```
