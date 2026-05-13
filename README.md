@@ -19,14 +19,10 @@ brew install anovabar
 brew install fruitloops
 ```
 
-## fruitloops extras
+## fruitloops
 
-`fruitloops` installs lightweight by default. Add bulk/live/plot Python
-dependencies into the brewed virtualenv when needed:
-
-```bash
-fruitloops-install-extras
-```
+`fruitloops` installs its Python runtime dependencies by default, including
+bulk DuckDB, Arrow, live API, plotting, and pandas support.
 
 ## Release automation
 
