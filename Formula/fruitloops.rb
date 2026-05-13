@@ -39,7 +39,7 @@ class Fruitloops < Formula
   end
 
   test do
-    assert_match "fruitloops 0.1.2", shell_output("#{bin}/fruitloops --version")
+    assert_match version.to_s, shell_output("#{bin}/fruitloops --version")
     assert_path_exists pkgshare/"requirements-all.txt"
     assert_match "Usage:", shell_output("#{bin}/fruitloops-install-extras --help")
     assert_match "flywire", shell_output("#{bin}/fruitloops datasets")

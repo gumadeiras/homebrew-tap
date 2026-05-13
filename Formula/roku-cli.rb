@@ -12,7 +12,7 @@ class RokuCli < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *Language::Node.std_npm_install_args(libexec), "--ignore-scripts"
+    system "npm", "install", *Language::Node.std_npm_args(prefix: libexec), "--ignore-scripts"
     (bin/"roku").write <<~SH
       #!/bin/bash
       exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/roku-ts-cli/dist/src/cli.js" "$@"

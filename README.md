@@ -27,3 +27,9 @@ dependencies into the brewed virtualenv when needed:
 ```bash
 fruitloops-install-extras
 ```
+
+## Release automation
+
+Upstream release workflows update formula URLs and checksums through
+`scripts/update_formula.py`. Keep formula updates there instead of copying
+one-off render scripts into each tool repo.
