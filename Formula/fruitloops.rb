@@ -3,15 +3,16 @@ class Fruitloops < Formula
 
   desc "Agent-friendly CLI for querying connectome analysis tables"
   homepage "https://github.com/gumadeiras/fruitloops"
-  url "https://github.com/gumadeiras/fruitloops/releases/download/v0.1.0/fruitloops-0.1.0.tar.gz"
-  sha256 "9373fef6bc0c6789e26b87531e2b867af61732c112d675cb731335cfc1d2d7bf"
+  url "https://github.com/gumadeiras/fruitloops/releases/download/v0.1.2/fruitloops-0.1.2.tar.gz"
+  sha256 "9ac5b68f7d8bd905eaab911ed887d558cad811c68e6939be8f0d666f9324b288"
   license "MIT"
-  revision 1
 
   depends_on "python@3.13"
 
   def install
     virtualenv_install_with_resources
+
+    (libexec/"share/fruitloops/data").install Dir["data/*"]
 
     (pkgshare/"requirements-all.txt").write <<~EOS
       duckdb>=1.1
@@ -38,8 +39,9 @@ class Fruitloops < Formula
   end
 
   test do
-    assert_match "fruitloops 0.1.0", shell_output("#{bin}/fruitloops --version")
+    assert_match "fruitloops 0.1.2", shell_output("#{bin}/fruitloops --version")
     assert_path_exists pkgshare/"requirements-all.txt"
     assert_match "Usage:", shell_output("#{bin}/fruitloops-install-extras --help")
+    assert_match "flywire", shell_output("#{bin}/fruitloops datasets")
   end
 end
