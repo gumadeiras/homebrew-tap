@@ -24,6 +24,9 @@ brew install fruitloops
 `fruitloops` installs its Python runtime dependencies by default, including
 bulk DuckDB, Arrow, live API, plotting, and pandas support.
 
+The formula currently supports Apple Silicon macOS and x86_64 Linux. The
+runtime dependency wheels are selected per platform during install.
+
 ## Release automation
 
 Upstream release workflows update formula URLs and checksums through
