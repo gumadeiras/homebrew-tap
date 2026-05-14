@@ -1,4 +1,4 @@
-class OrthodbCli < Formula
+class Orthodb < Formula
   include Language::Python::Virtualenv
 
   desc "Agent-friendly CLI for cached OrthoDB downloads and live API queries"

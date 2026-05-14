@@ -1,6 +1,6 @@
 require "language/node"
 
-class RokuCli < Formula
+class Roku < Formula
   include Language::Node
 
   desc "CLI and library for controlling Roku devices"
@@ -12,12 +12,8 @@ class RokuCli < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: libexec)
-    (bin/"roku").write <<~SH
-      #!/bin/bash
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/roku-ts-cli/dist/src/cli.js" "$@"
-    SH
-    chmod 0755, bin/"roku"
+    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
+    bin.install_symlink libexec/"bin/roku"
   end
 
   test do

@@ -1,4 +1,4 @@
-class FlylightCli < Formula
+class Flylight < Formula
   include Language::Python::Virtualenv
 
   desc "Sync and query Janelia FlyLight Split-GAL4 resources locally"

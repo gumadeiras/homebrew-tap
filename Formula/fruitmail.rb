@@ -1,6 +1,6 @@
 require "language/node"
 
-class FruitmailCli < Formula
+class Fruitmail < Formula
   include Language::Node
 
   desc "Fast Apple Mail search CLI with body content support"
@@ -12,12 +12,8 @@ class FruitmailCli < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: libexec)
-    (bin/"fruitmail").write <<~SH
-      #!/bin/bash
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/apple-mail-search-cli/bin/fruitmail" "$@"
-    SH
-    chmod 0755, bin/"fruitmail"
+    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
+    bin.install_symlink libexec/"bin/fruitmail"
   end
 
   test do

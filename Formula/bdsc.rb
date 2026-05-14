@@ -1,4 +1,4 @@
-class BdscCli < Formula
+class Bdsc < Formula
   include Language::Python::Virtualenv
 
   desc "Sync and query BDSC datasets locally"

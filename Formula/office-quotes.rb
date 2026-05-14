@@ -1,6 +1,6 @@
 require "language/node"
 
-class OfficeQuotesCli < Formula
+class OfficeQuotes < Formula
   include Language::Node
 
   desc "Sitcom quotes CLI with offline and API modes"
@@ -12,12 +12,8 @@ class OfficeQuotesCli < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: libexec)
-    (bin/"office-quotes").write <<~SH
-      #!/bin/bash
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/office-quotes-cli/office-quotes.js" "$@"
-    SH
-    chmod 0755, bin/"office-quotes"
+    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
+    bin.install_symlink libexec/"bin/office-quotes"
   end
 
   def caveats
