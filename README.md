@@ -19,6 +19,9 @@ brew install anovabar
 brew install fruitloops
 ```
 
+Old `*-cli` formula names are aliases for the renamed formulas, so existing
+install commands keep resolving while new installs should use the shorter names.
+
 ## fruitloops
 
 `fruitloops` installs its Python runtime dependencies by default, including
