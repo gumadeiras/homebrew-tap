@@ -3,8 +3,8 @@ class Bdsc < Formula
 
   desc "Sync and query BDSC datasets locally"
   homepage "https://github.com/gumadeiras/bdsc-cli"
-  url "https://github.com/gumadeiras/bdsc-cli/releases/download/v0.2.2/bdsc_cli-0.2.2.tar.gz"
-  sha256 "710222e21863b8a7b300a3a73ce28bd96ada3bd28ab610e066f9dc0ddce1cb79"
+  url "https://github.com/gumadeiras/bdsc-cli/releases/download/v0.2.4/bdsc-0.2.4.tar.gz"
+  sha256 "df38d6b8572b265a45585defa49ff7c1f8351c4c8aeadaa7105b7287d66f7268"
   license "MIT"
 
   depends_on "python@3.13"
