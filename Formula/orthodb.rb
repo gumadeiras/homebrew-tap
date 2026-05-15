@@ -3,8 +3,8 @@ class Orthodb < Formula
 
   desc "Agent-friendly CLI for cached OrthoDB downloads and live API queries"
   homepage "https://github.com/gumadeiras/orthodb-cli"
-  url "https://github.com/gumadeiras/orthodb-cli/releases/download/v0.1.1/orthodb_cli-0.1.1.tar.gz"
-  sha256 "4d6b6d5ca55b7b0bc293d4e4342e9150640b6c1518558594b86f07b575efc334"
+  url "https://github.com/gumadeiras/orthodb-cli/releases/download/v0.1.3/orthodb-0.1.3.tar.gz"
+  sha256 "d352334e9ec40e61506ccb557b4ba1c7c8cfc34519d7b3152f0b1a009d06a77b"
   license "MIT"
 
   depends_on "python@3.13"
