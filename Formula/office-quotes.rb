@@ -5,8 +5,8 @@ class OfficeQuotes < Formula
 
   desc "Sitcom quotes CLI with offline and API modes"
   homepage "https://github.com/gumadeiras/office-quotes-cli"
-  url "https://github.com/gumadeiras/office-quotes-cli/releases/download/v1.1.2/office-quotes-cli-1.1.2.tgz"
-  sha256 "73e83d4b92a0bf5ca63b24c05cbb130652d1759d6c7033ef1a2555a8002305db"
+  url "https://github.com/gumadeiras/office-quotes-cli/releases/download/v1.1.5/gumadeiras-office-quotes-1.1.5.tgz"
+  sha256 "8612a49dfb7054f102a3c64c7af867fc67aef9807d200258709ba4ff0e725c43"
   license "MIT"
 
   depends_on "node"
