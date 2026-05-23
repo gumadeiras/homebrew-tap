@@ -5,8 +5,8 @@ class Gotrain < Formula
 
   desc "Atomic CLI for MTA train departures"
   homepage "https://github.com/gumadeiras/gotrain-cli"
-  url "https://github.com/gumadeiras/gotrain-cli/releases/download/v1.2.2/gotrain-cli-1.2.2.tgz"
-  sha256 "643143ffbf0f7cfea82e879d64f7925f98b192fc0134fe01ce2e977035a6888a"
+  url "https://github.com/gumadeiras/gotrain-cli/releases/download/v1.2.5/gotrain-1.2.5.tgz"
+  sha256 "a736278f561e011698a86f03ed4b7b7263b33c2cba2d9f07f53359b2c1245703"
   license "ISC"
 
   depends_on "node"
