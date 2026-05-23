@@ -5,8 +5,8 @@ class Roku < Formula
 
   desc "CLI and library for controlling Roku devices"
   homepage "https://github.com/gumadeiras/roku-cli"
-  url "https://github.com/gumadeiras/roku-cli/releases/download/v1.1.4/roku-ts-cli-1.1.4.tgz"
-  sha256 "e8dd24de09b4c520a39a9e24cf7532c975abbbc64add61bf76c1bb92ff51bdb1"
+  url "https://github.com/gumadeiras/roku-cli/releases/download/v1.1.6/gumadeiras-roku-1.1.6.tgz"
+  sha256 "735fe227414cee065736a2f6191d1435ca438e652c061f016bc8899de5ff85ee"
   license "MIT"
 
   depends_on "node"
