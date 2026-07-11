@@ -3,8 +3,8 @@ class Flybase < Formula
 
   desc "Sync and query FlyBase datasets locally"
   homepage "https://github.com/gumadeiras/flybase-cli"
-  url "https://github.com/gumadeiras/flybase-cli/releases/download/v0.1.5/flybase-0.1.5.tar.gz"
-  sha256 "45c16b184390ab37022fa8f028ed51c8c4d9f4b8a754fefa3d7853ec699b2ca0"
+  url "https://github.com/gumadeiras/flybase-cli/releases/download/v0.1.6/flybase-0.1.6.tar.gz"
+  sha256 "5938a8b896f1964280961bf51e18116121b8aeebbf8969f56b3fc37e1fa9f5e5"
   license "MIT"
 
   depends_on "python@3.13"
