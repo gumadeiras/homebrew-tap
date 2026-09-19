@@ -5,8 +5,8 @@ class Fruitmail < Formula
 
   desc "Fast Apple Mail search CLI with body content support"
   homepage "https://github.com/gumadeiras/fruitmail-cli"
-  url "https://github.com/gumadeiras/fruitmail-cli/releases/download/v1.2.1/fruitmail-1.2.1.tgz"
-  sha256 "c97538dbecd18bb415db57a610738ca558b8a7908d4fa8e1780541d14e798f35"
+  url "https://github.com/gumadeiras/fruitmail-cli/releases/download/v1.2.2/fruitmail-1.2.2.tgz"
+  sha256 "ba28e0681423ea17c548761dc9d36f0aa35714ba9132679d51d67ee7230a033f"
   license "ISC"
 
   depends_on "node"
