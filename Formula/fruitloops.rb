@@ -337,6 +337,6 @@ class Fruitloops < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/fruitloops --version")
     assert_match "flywire", shell_output("#{bin}/fruitloops datasets")
-    system libexec/"bin/python", "-c", "import duckdb, pyarrow, caveclient, neuprint, matplotlib, pandas"
+    system libexec/"bin/python", "-c", "import duckdb, pyarrow, caveclient, neuprint, matplotlib, pandas, scipy"
   end
 end
