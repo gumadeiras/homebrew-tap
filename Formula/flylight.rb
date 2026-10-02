@@ -3,8 +3,8 @@ class Flylight < Formula
 
   desc "Sync and query Janelia FlyLight Split-GAL4 resources locally"
   homepage "https://github.com/gumadeiras/flylight-cli"
-  url "https://github.com/gumadeiras/flylight-cli/releases/download/v0.12.7/flylight-0.12.7.tar.gz"
-  sha256 "3c4693aea71c4ed7c38b15158e50fd3eb86a5a2f6a2956045533a86bcbe4db53"
+  url "https://github.com/gumadeiras/flylight-cli/releases/download/v0.12.8/flylight-0.12.8.tar.gz"
+  sha256 "186841ed1d461b67d991e7c03b9f3ce74b28919fb7df67f261f926120835cebd"
   license "MIT"
 
   depends_on "python@3.14"
