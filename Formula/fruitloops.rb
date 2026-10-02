@@ -3,8 +3,8 @@ class Fruitloops < Formula
 
   desc "Agent-friendly CLI for querying connectome analysis tables"
   homepage "https://github.com/gumadeiras/fruitloops"
-  url "https://github.com/gumadeiras/fruitloops/releases/download/v0.2.1/fruitloops-0.2.1.tar.gz"
-  sha256 "85695b5ac6b02db42062597a2f3311c1b2f4cde577c68a6fb6100d30a3e8262c"
+  url "https://github.com/gumadeiras/fruitloops/releases/download/v0.2.2/fruitloops-0.2.2.tar.gz"
+  sha256 "38cd5b9ba3b3f15e196273279abb193e743df04b8dee35ecb1897548bfb04779"
   license "MIT"
 
   depends_on "python@3.13"
