@@ -321,7 +321,6 @@ class Fruitloops < Formula
     end
 
     venv = virtualenv_create(libexec, "python3.13")
-    resources.each(&:fetch)
     wheelhouse = buildpath/"wheelhouse"
     wheelhouse.mkpath
     resource_paths = resources.map do |resource|
